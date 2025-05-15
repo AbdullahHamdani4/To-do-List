@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure?</p>
+            <button id="okBtn">OK</button>
+            <button id="cancelBtn">Cancel</button>
+        </div>
+    </div>
+    <nav>
+        <div class="navbarcont">
+            <div class="navbartop-row">
+                <img src="pic.png" alt="Logos">
+                <div class="menu-icon">&#9776;</div>
+            </div>
+            
+            <div class="navbarlinks">
+                <!-- <div class="navbarmenu"> -->
+                    <a href="" class="aaa">Made For</a>
+
+                    <!-- <div class="menulinks">
+                        <a href=""><i class="fa-regular fa-circle-check"></i> Task Management</a>
+                        <a href=""><i class="fa-solid fa-diagram-project"></i> Project Management</a>
+                        <a href=""><i class="fa-regular fa-clock"></i> Time Management</a>
+                        <a href=""><i class="fa-solid fa-people-group"></i> Teamwork</a>
+
+                    </div>
+                </div> -->
+               <!-- <div class="navbarresources"> -->
+                <a href="">Resources</a>
+                <!-- <div class="resourceslinks">
+                    <a href="">Integrations</a>
+                    <a href="">Templates</a>
+                    <a href="">Getting Started</a>
+                    <a href="">Help Center</a>
+                    <a href="">Productivity Methods</a>
+                </div>
+               </div>
+                -->
+                <a href="">Pricing</a>
+                <a href="">Login</a>
+                <button>Start For Free</button>
+            </div>
+        </div>
+    </nav>
+    <div class="list">
+        <div class="listcontainer">
+
+            <div class="header">
+                <h1>To Do list </h1>
+                <button id="cleartask">Clear All Tasks</button>
+             </div>
+             <div class="tasks">
+                <input type="text" placeholder="Add a new Task" class="input">
+                <span class="hide">Please Enter a Task</span>
+                <button class="button" onclick="addtask()">Add Task</button>
+             </div>
+        
+     <ul id="tasklist"></ul>
+    </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+</html>
